@@ -2,12 +2,16 @@ import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import {Task} from './components/interfaces/TasksInterface'
+import TaskCard from './components/TaskCard';
 import TaskList from './components/TaskList';
 
 
+interface Props{
+  title?: string
+}
 
-const App: React.FC = ()=> {
-  const [task, settask] = useState<Task[]>([
+export function App ({title}:Props){
+  const [tasks, settasks] = useState<Task[]>([
     {
       id:1,
       title: 'learn react',
@@ -20,21 +24,19 @@ const App: React.FC = ()=> {
       status:false,
       description:'practice useState, and other hooks'
     },
-
   ])
 
   return (
     <div className="text-white">
       <nav className='navbar navbar-dark bg-primary'>
-        <div className="container">
-          <a href="/">Home</a>
+        <div className="container ">
+          <a className='text-decoration-none' href="/">{title}</a>
         </div>
       </nav>
-      <h1>TS sample</h1>
-
       <main className="container p-4">
-        <TaskList tasks={task} />
-       
+        <div className="col-md-8">
+          <TaskList tasks={tasks} />
+        </div>
       </main>
 
     </div>

@@ -7,7 +7,7 @@ import 'bootswatch/dist/quartz/bootstrap.min.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App title='Typescript/React'/>
   </React.StrictMode>,
   document.getElementById('root')
 );
