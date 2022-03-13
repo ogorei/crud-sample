@@ -10,3 +10,6 @@ npx create-react-app app-name --typescript
 npm i bootswatch
 
 ```
+Useful Sites
+
+https://reactjs.org/docs/typechecking-with-proptypes.html
