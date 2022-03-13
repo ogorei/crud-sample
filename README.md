@@ -1,11 +1,11 @@
 Typescript Practice
 
-#Starter
+##Starter
 ```
 npx create-react-app app-name --typescript
 ```
 
-#Stylying (Bootstrap) 
+##Stylying (Bootstrap) 
 ```
 npm i bootswatch
 
