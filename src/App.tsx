@@ -4,6 +4,8 @@ import './App.css';
 import {Task} from './components/interfaces/TasksInterface'
 import TaskCard from './components/TaskCard';
 import TaskList from './components/TaskList';
+import TaskForm from './components/TaskForm';
+
 
 
 interface Props{
@@ -35,6 +37,9 @@ export function App ({title}:Props){
       </nav>
       <main className="container p-4">
         <div className="col-md-8">
+          <div className="col-md-4">
+            <TaskForm />
+          </div>
           <TaskList tasks={tasks} />
         </div>
       </main>

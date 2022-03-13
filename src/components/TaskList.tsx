@@ -10,8 +10,8 @@ interface Props {
 export default function TaskList({tasks}: Props){
   return (
       <>
-       {tasks.map((item)=> (
-         <TaskCard task={item} />
+       {tasks.map((item,i)=> (
+         <TaskCard task={item} key={i} />
        ))}
       </>
       )
