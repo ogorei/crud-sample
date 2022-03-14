@@ -10,8 +10,14 @@ npx create-react-app app-name --typescript
 npm i bootswatch
 
 ```
+```
+npm i react-icons
+```
+
+
 参考サイト
 https://bootswatch.com/
+https://react-icons.github.io/react-icons/icons?name=ai
 
 Useful Sites
 
