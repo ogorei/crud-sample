@@ -36,11 +36,15 @@ export function App ({title}:Props){
         </div>
       </nav>
       <main className="container p-4">
-        <div className="col-md-8">
-          <div className="col-md-4">
-            <TaskForm />
+        <div className="row">
+          <div className="col-md-8">
+            <div className="col-md-10">
+              <TaskForm />
+            </div>
+            <div className="row">
+              <TaskList tasks={tasks} />
+            </div>
           </div>
-          <TaskList tasks={tasks} />
         </div>
       </main>
 
