@@ -29,8 +29,8 @@ export function App ({title}:Props){
   ])
 
   return (
-    <div className="text-white">
-      <nav className='navbar navbar-dark bg-primary'>
+    <div className="text-black">
+      <nav className='navbar navbar-light bg-light'>
         <div className="container ">
           <a className='text-decoration-none' href="/">{title}</a>
         </div>
