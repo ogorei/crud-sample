@@ -7,7 +7,7 @@ interface Props {
 
 export default function TaskCard ({task}: Props) {
   return (
-    <div className='card card-body rounded-0'>
+    <div className='card card-body text-center rounded-0'>
         <h2>{task.title}</h2>
         <p>{task.id}</p>
         <p>{task.description}</p>

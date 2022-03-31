@@ -13,6 +13,7 @@ interface Props{
 }
 
 export function App ({title}:Props){
+
   const [tasks, settasks] = useState<Task[]>([
     {
       id:1,
@@ -30,9 +31,9 @@ export function App ({title}:Props){
 
   return (
     <div className="text-black">
-      <nav className='navbar navbar-light bg-light'>
+      <nav className='navbar navbar-light bg-black'>
         <div className="container ">
-          <a className='text-decoration-none' href="/">{title}</a>
+          <a className='text-decoration-none text-white' href="/">{title}</a>
         </div>
       </nav>
       <main className="container p-4">
